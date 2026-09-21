@@ -1,16 +1,71 @@
-# React + Vite
+# Movie Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Movie Library application built with React, Redux, React Router, Axios, Bootstrap, and the TMDB API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User login and protected routes
+- TMDB popular movie integration
+- Dynamic movie search with debouncing
+- Movie details with cast, genres, language, rating, release date, and description
+- Personal movie library
+- Add, edit, and delete movies
+- Favorites and watchlist management
+- Redux global state management
+- LocalStorage data persistence
+- Movie sorting by rating and release date
+- Loading and error handling
+- Responsive Bootstrap interface
+- Client-side routing
+- Environment-based API configuration
+- Direct API integration without Redux Thunk
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Technology | Usage |
+|---|---|
+| React | UI development |
+| Vite | Development and build tool |
+| Redux | Global state management |
+| React Redux | React-Redux integration |
+| React Router DOM | Client-side routing |
+| Axios | HTTP/API requests |
+| Bootstrap | Responsive UI |
+| TMDB API | Movie data |
+| LocalStorage | Local persistence |
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+movie-library/
+│
+├── public/
+│
+├── src/
+│   ├── api/
+│   │   └── tmdb.js
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── MovieList.jsx
+│   │   ├── MovieSearch.jsx
+│   │   ├── MovieDetails.jsx
+│   │   ├── MyMovies.jsx
+│   │   ├── MovieForm.jsx
+│   │   ├── Login.jsx
+│   │   └── PrivateRoute.jsx
+│   │
+│   ├── redux/
+│   │   ├── actions.js
+│   │   ├── reducer.js
+│   │   └── store.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
