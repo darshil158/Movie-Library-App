@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/55691e4a-3b57-4f63-875a-52ab060f4d4b" /># Movie Zone
+# Movie Zone
 
 A React-based Movie Library application built with React, Redux, React Router, Axios, Bootstrap, and the TMDB API.
 
