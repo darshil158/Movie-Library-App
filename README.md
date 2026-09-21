@@ -66,10 +66,16 @@ movie-library/
 ├── package-lock.json
 └── README.md
 ```
+## How to Run 
 
+- To run the Vite Project, install zip file from github repo.
+- Extract it.
+- Write cmd "npm i" in terminal after opening that unzip folder.
+- Enter "npm run dev" to run in "[localhost:5173](http://localhost:5173/)".
+  
 ## Login Page
 ### You can write Username and Password anything, to Access the MovieZone 
-### Demo 
+### Demo :- 
 - UserName : User123
 - Password : user123
   
