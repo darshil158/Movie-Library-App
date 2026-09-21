@@ -35,20 +35,24 @@ A React-based Movie Library application built with React, Redux, React Router, A
 ```text
 movie-library/
 │
+├── node_modules/
+│
 ├── public/
 │
 ├── src/
 │   ├── api/
 │   │   └── tmdb.js
 │   │
+│   ├── assets/
+│   │
 │   ├── components/
-│   │   ├── Navbar.jsx
+│   │   ├── Login.jsx
+│   │   ├── MovieDetails.jsx
+│   │   ├── MovieForm.jsx
 │   │   ├── MovieList.jsx
 │   │   ├── MovieSearch.jsx
-│   │   ├── MovieDetails.jsx
 │   │   ├── MyMovies.jsx
-│   │   ├── MovieForm.jsx
-│   │   ├── Login.jsx
+│   │   ├── Navbar.jsx
 │   │   └── PrivateRoute.jsx
 │   │
 │   ├── redux/
@@ -56,16 +60,21 @@ movie-library/
 │   │   ├── reducer.js
 │   │   └── store.js
 │   │
+│   ├── App.css
 │   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+│   ├── index.css
+│   └── main.jsx
 │
 ├── .env
 ├── .gitignore
+├── eslint.config.js
+├── index.html
 ├── package.json
 ├── package-lock.json
-└── README.md
+├── README.md
+└── vite.config.js
 ```
+
 ## How to Run 
 
 - To run the Vite Project, install zip file from github repo.
